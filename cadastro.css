@@ -1,0 +1,99 @@
+body{
+    background-image: url('tela_inicial.jpg'); /* Define a imagem de fundo. Troque pelo nome do seu arquivo */
+    background-size: cover;                  /* Faz a imagem cobrir toda a tela, sem distorcer */
+    background-position: center;             /* Centraliza a imagem na tela */
+    background-repeat: no-repeat;                                         /* Evita que a imagem se repita */
+    min-height: 100vh;                       /* Garante que o fundo ocupe 100% da altura da tela */
+    margin: 0;                               /* Remove a margem padrão do navegador */
+    padding: 0;       
+    display: flex;
+    justify-content: center;                 /* Centraliza o conteúdo horizontalmente */
+    align-items: center;                     /* Centraliza o conteúdo verticalmente */
+}
+
+
+.quadro-cadastro{
+    background-color: rgba(49, 8, 49, 0.5); /* Fundo branco com opacidade */
+    padding: 20px;                             /* Espaçamento interno */
+    border-radius: 10px;                       /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    backdrop-filter: blur(1px);               /* Desfoque do fundo */
+}
+.quadro-cadastro label {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 1px 1px 4px #3a013a99;
+    margin-bottom: 6px;
+    display: block;
+}
+/* ...código existente... */
+
+.quadro-cadastro input[type="text"],
+.quadro-cadastro input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: rgba(255,255,255,0.7);
+    transition: border-color 0.3s;
+}
+
+.quadro-cadastro input[type="text"]:focus,
+.quadro-cadastro input[type="password"]:focus {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.1em;
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilizando o botão */
+.quadro-cadastro input[type="button"],
+.quadro-cadastro input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a1744;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 12px; /* Espaço entre os botões */
+}
+
+
+.quadro-cadastro input[type="button"]:hover,
+.quadro-cadastro input[type="submit"]:hover {
+    background-color: #64246d;
+}
+
+.quadro-cadastro input[type="button"]:last-child,
+.quadro-cadastro input[type="submit"]:last-child {
+    margin-bottom: 0; /* Remove o espaço do último botão */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .quadro-cadastro {
+        width: 90%;
+        padding: 10px;
+    }
+    .quadro-cadastro input[type="text"],
+    .quadro-cadastro input[type="password"],
+    .quadro-cadastro input[type="button"],
+    .quadro-cadastro input[type="submit"] {
+        font-size: 1em;
+        padding: 8px;
+    }
+    .quadro-cadastro label {
+        font-size: 1em;
+    }
+    body {
+        padding: 10px;
+    }
+}
