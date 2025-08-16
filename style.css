@@ -75,3 +75,10 @@ body{
     background-color: #64246d;
 }
 
+.mensagem-login {
+    color: #ffccff;      /* Escolha a cor que preferir */
+    font-size: 1.5em;
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
